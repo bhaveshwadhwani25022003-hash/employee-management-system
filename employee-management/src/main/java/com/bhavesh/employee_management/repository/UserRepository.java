@@ -1,0 +1,12 @@
+package com.bhavesh.employee_management.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bhavesh.employee_management.model.User;
+
+public interface UserRepository extends JpaRepository<User, Integer>{
+
+  Optional<User> findByUsername(String username);  
+} 
