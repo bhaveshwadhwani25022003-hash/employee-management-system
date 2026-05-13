@@ -35,7 +35,7 @@ public class EmployeeController {
 
     @GetMapping("/department/{deptId}")
     public List<Employee> getByDepartment(@PathVariable Integer deptId) {
-        return employeeRepository.findByDepartment(deptId);
+        return employeeRepository.findByDepartmentId(deptId);
     }
 
     @PutMapping("/update/{id}")

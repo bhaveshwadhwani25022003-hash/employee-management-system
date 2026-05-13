@@ -8,5 +8,5 @@ import com.bhavesh.employee_management.model.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
 
-    List<Employee> findByDepartment(Integer departmentId); //gets employee by department
+    List<Employee> findByDepartmentId(Integer departmentId); //gets employee by department
 } 
